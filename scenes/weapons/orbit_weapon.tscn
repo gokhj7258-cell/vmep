@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/weapons/orbit_weapon.gd" id="1_orbit"]
+
+[node name="OrbitWeapon" type="Node2D"]
+script = ExtResource("1_orbit")
+weapon_name = "Orbit Shield"
+damage = 14.0
+orbit_radius = 75.0
+rotation_speed = 3.6
+orb_count = 1

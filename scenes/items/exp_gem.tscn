@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scenes/items/exp_gem.gd" id="1_gem"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="2_icon"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gem"]
+radius = 10.0
+
+[node name="ExpGem" type="Area2D"]
+collision_layer = 8
+collision_mask = 1
+script = ExtResource("1_gem")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.2, 1, 0.4, 1)
+rotation = 0.785398
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_icon")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gem")
